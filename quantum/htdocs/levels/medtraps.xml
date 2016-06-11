@@ -1,0 +1,14 @@
+<level dt="0.1" scale="2.5" maxtilt="10" colourmap="amp"  qft="5">
+<synth pitchdown="8"/>
+<mask>medtraps.png</mask>
+<background>medtrapsbg.jpg</background>
+<gaussian x="564" y="371" sigma="10" px="0" py="0" a="1"/>
+<trap mask="#880000" target="20"/>
+<trap mask="#00ff00" target="20"/>
+<trap mask="#ffff00" target="20"/>
+<trap mask="#0000ff" target="20"/>
+<trap mask="#ff00ff" target="20"/>
+<trap mask="#00ffff" target="20"/>
+<goal mask="#888888" target="50"/>
+<sink mask="#ffffff"/>
+</level>

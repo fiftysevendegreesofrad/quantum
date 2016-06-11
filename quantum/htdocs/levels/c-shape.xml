@@ -1,0 +1,8 @@
+<level dt="0.1" scale="3" colourmap="amp" maxtilt="2.5"  qft="2.5">
+<synth pitchdown="8"/>
+<mask>c-shape-mask.png</mask>
+<background>c-shape-bg.jpg</background>
+<gaussian x="153" y="109" sigma="10" px="0" py="0" a="1"/>
+<walls mask="#000000"/>
+<goal mask="#ff0000" target="20"/>
+</level>

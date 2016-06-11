@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level dt="0.1" scale="3" colourmap="amp" maxtilt="2.5" qft="5">
+<text><![CDATA[
+<i><u>Meet the Quantum Wavefunction...</u></i><br/>
+<br/>
+A particle can be in many places at once,
+<br/>and this game shows you all of them.
+<br/>
+<br/>The end result looks a bit like a cloud.
+]]>
+</text>
+<background>lichen.jpg</background>
+<mask>lichenmask.png</mask>
+<walls mask="#000000"/>
+<gaussian x="600" y="300" sigma="1" px="0" py="0" a="1"/>
+</level>

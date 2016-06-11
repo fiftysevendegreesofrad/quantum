@@ -1,0 +1,10 @@
+<level dt="0.1" scale="3" colourmap="amp" maxtilt="2.5" qft="5">
+<text><![CDATA[
+Sometimes you just have to wait.
+]]>
+</text>
+<background>lichen.jpg</background>
+<mask>lichenmask.png</mask>
+<walls mask="#000000"/>
+<gaussian x="600" y="300" sigma="1" px="0" py="0" a="1"/>
+</level>

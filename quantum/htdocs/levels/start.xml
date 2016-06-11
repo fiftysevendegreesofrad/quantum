@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level dt="0.1" scale="3" colourmap="amp" maxtilt="2.5" qft="5">
+<text><![CDATA[
+Click then press space to start
+]]>
+</text>
+<background>lichen.jpg</background>
+<mask>lichenmask.png</mask>
+<walls mask="#000000"/>
+<gaussian x="153" y="109" sigma="1" px="0" py="0" a="1"/>
+</level>

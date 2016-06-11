@@ -1,0 +1,11 @@
+<level dt="0.225" scale="3" colourmap="rainbow" maxtilt="2.5" qft="5.5">
+<audioloop>shpong_gamecut.mp3</audioloop>
+<mask>annularwait.png</mask>
+<background>annularwait.jpg</background>
+<gaussian x="150" y="150" sigma="5" px="0" py="0" a="1"/>
+<goal mask="#ff0000" target="13"/>
+<goal mask="#ffff00" target="13"/>
+<goal mask="#00ff00" target="13"/>
+<goal mask="#0000ff" target="13"/>
+<potentialcone x="350" y="262" r="400" depth="-3"/>
+</level>

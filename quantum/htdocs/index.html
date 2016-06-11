@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta property="og:title"              content="Quantum Marble Maze" />
+<meta property="og:description"        content="Come play the world's first quantum mechanics browser game.  Physics knowledge not necessary, but we can't be held responsible for you unintentionally learning something..." />
+<meta property="og:image"              content="http://tropic.org.uk/~crispin/quantum/fbthumb.jpg" />
+<meta property="og:url"              content="http://tropic.org.uk/~crispin/quantum/" />
+<meta property="fb:app_id" content="1520933611555865"/>
+<meta property="og:type" content="website" />
+<title>Quantum Marble Maze</title>
+<style>
+div.textContainer {
+    text-align: center;
+    border: 1px solid #000;
+    height: 100px;
+    padding: 10px 0;
+}
+
+div.textContainer p {
+    display: inline-block;
+    text-align: left;
+    color: grey;
+}
+
+p {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    color: #aaccff;
+}
+
+applet {border-style: double;}
+</style>
+</head>
+<body bgcolor=black text=white>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1520933611555865',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div align=center><img src="title.png"/></div>
+<div align=center>
+<applet code="quantum.GameWindow"
+        archive="quantum.jar"
+        codebase="."
+        width="700" height="525"
+        id="GameApplet">
+</applet>
+</td></tr></table>
+
+<br/>
+<div class="fb-like" data-href="http://tropic.org.uk/~crispin/quantum" data-layout="standard" data-action="recommend" data-show-faces="true" data-share="true" data-colorscheme="dark"></div>
+<!--
+<small>&nbsp;or, help me out by&nbsp;</small>
+<input type="image" src="sharelogo.png" onclick="myFunction()"/><small>;-)</small>
+-->
+</div>
+
+<div align=center>
+<p>Download the <a href="https://oscillicraft.bandcamp.com/releases">music</a></p>
+<p>Read about the <a href="https://linkingideasblog.wordpress.com/2016/04/25/learning-quantum-mechanics-the-easy-way/">physics</a> behind this game and how I made it after an accident in the Alps
+<p>Note to employers - outdoor pursuits make me productive!</p>
+</div>
+
+<div class=textContainer>
+          <p><small>To run this you will need to the <a href="https://www.java.com/en/download/">latest version of Java</a>.<br/>Unfortunatly Chrome has stopped supporting Java altoghether. <br/> In other browsers you may need to <a href="https://java.com/en/download/help/enable_browser.xml">enable it</a>.</small></p>
+</div>
+
+<script>
+function myFunction() {
+        FB.ui({
+          method: 'feed',
+          name: "Quantum Marble Maze",
+          link: "http://tropic.org.uk/~crispin/quantum",
+          caption: document.getElementById("GameApplet").getTextReport(),
+          picture: "http://tropic.org.uk/~crispin/quantum/fbthumb.jpg"
+            },  function(response) {}
+        );
+}
+</script>
+
+</div>
+</body>
+</html>

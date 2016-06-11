@@ -1,0 +1,8 @@
+<level dt="0.1" scale="3" colourmap="rainbow" maxtilt="2.5"  qft="2.5">
+<audioloop>shpong_gamecut.mp3</audioloop>
+<mask>snake.png</mask>
+<background>snakebg.png</background>
+<gaussian x="99" y="69" sigma="5" px="0" py="0" a="1"/>
+<walls mask="#000000"/>
+<goal mask="#ff0000" target="10"/>
+</level>

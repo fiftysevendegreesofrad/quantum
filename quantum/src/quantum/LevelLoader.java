@@ -50,7 +50,7 @@ public class LevelLoader
             		  lm.setLoopLength(Double.parseDouble(e.getAttribute("length")));
             	  break;
               case "background":
-            	  System.out.println("setting bg "+node.getTextContent());
+            	  //System.out.println("setting bg "+node.getTextContent());
             	  lm.setBackground(ImageIO.read(new URL(baseurl+node.getTextContent())));
             	  break;
               case "text":

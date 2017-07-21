@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <game reward="slowrainbow.xml"><!--tune-->
     <level>
-        <splash>start.xml</splash>
         <splash>intro.xml</splash>
         <challenge>c-bounce.xml</challenge>
     </level>

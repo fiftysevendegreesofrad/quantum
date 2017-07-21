@@ -6,16 +6,16 @@ import java.awt.FontFormatException;
 import java.awt.GraphicsEnvironment;
 
 import javax.swing.JComponent;
+import javax.swing.JPanel;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 
-import javax.swing.RootPaneContainer;
 import javax.swing.SwingUtilities;
 
 interface Scene {
-	Scene play(RootPaneContainer frame, Font mainFont) throws InterruptedException, InvocationTargetException;
+	Scene play(JPanel frame, Font mainFont) throws InterruptedException, InvocationTargetException;
 }
 
 class MenuScene implements Scene
@@ -25,9 +25,8 @@ class MenuScene implements Scene
 	{
 		this.levellist = levellist;
 	}
-	public Scene play(RootPaneContainer frame,Font font) throws InvocationTargetException, InterruptedException
+	public Scene play(JPanel fframe,Font font) throws InvocationTargetException, InterruptedException
 	{
-		final Container fframe = (JComponent)(frame.getContentPane());
 		final MenuComponent menu = new MenuComponent(levellist,700,525,fframe); //todo these dimensions appear too oft
 		SwingUtilities.invokeAndWait(new Runnable() {public void run() {
 			fframe.add(menu);
@@ -59,9 +58,8 @@ class LevelScene implements Scene
 		this.levelIndex = levelIndex;
 		this.menuscene = menuscene;
 	}
-	public Scene play(RootPaneContainer frame,Font font) throws InterruptedException, InvocationTargetException
+	public Scene play(JPanel fframe,Font font) throws InterruptedException, InvocationTargetException
 	{
-		final Container fframe = (JComponent)(frame.getContentPane());
 		final LevelComponent level = new LevelComponent(codebase,filename,700,525,font);
 		SwingUtilities.invokeAndWait(new Runnable() {public void run() {
 			fframe.add(level);
@@ -92,12 +90,12 @@ class LevelScene implements Scene
 
 public class GameManager {
 	String codebase;
-	RootPaneContainer frame;
+	JPanel frame;
 	Scene nextScene;
 	Font mainFont;
 	LevelList levellist;
 
-	public GameManager(RootPaneContainer frame,String codebase)
+	public GameManager(JPanel frame,String codebase)
 	{
 		this.frame = frame;
 		

@@ -19,6 +19,8 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
+
+
 @SuppressWarnings("serial")
 public class MenuComponent extends JPanel implements ActionListener {
 	LevelList levellist;
@@ -51,8 +53,11 @@ public class MenuComponent extends JPanel implements ActionListener {
 		for (int i=0; i<levellist.bookmarks.size(); i++)
 		{
 			JButton b1 = new JButton(String.format("%02d", i));
+			final Dimension d = new Dimension(30,20);
+			b1.setSize(d);
+			b1.setPreferredSize(d);
+			b1.setMaximumSize(d);
 			b1.setMargin(new Insets(0,5,0,5));
-			b1.setMaximumSize(new Dimension(10,10));
 			if (levellist.getBookmarkCompletedState(i))
 				b1.setBackground(Color.GREEN);
 			b1.setCursor(new Cursor(Cursor.HAND_CURSOR));

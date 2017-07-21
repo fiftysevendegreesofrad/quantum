@@ -9,18 +9,21 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+import java.awt.Toolkit;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.lang.reflect.InvocationTargetException;
 
 import javafx.embed.swing.JFXPanel;
 
-import javax.swing.JApplet;
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
+import javax.swing.border.Border;
 
 @SuppressWarnings("serial")
 class LevelComponent extends JPanel {
@@ -87,7 +90,7 @@ class LevelComponent extends JPanel {
 		final String htmlheader="<html><center>";
 		final String htmlfooter="</center></html>";
 		final String labelcontents = htmlheader+manager.getText()+htmlfooter;
-		System.out.println(labelcontents);
+		//System.out.println(labelcontents);
 		JLabel text = new JLabel(labelcontents);
 		if (!manager.isReward())
 			text.setForeground(Color.BLACK);
@@ -122,6 +125,7 @@ class LevelComponent extends JPanel {
 	public int height() {return height;}
 	@Override
 	public Dimension getPreferredSize() {return new Dimension(width(),height());}
+	
 	private final RenderingHints rh = new RenderingHints(RenderingHints.KEY_INTERPOLATION,
 			RenderingHints.VALUE_INTERPOLATION_BILINEAR);
 	public void paintComponent(Graphics g) {
@@ -180,7 +184,7 @@ class UpdateTask implements Runnable
 			{
 				final long endtime = System.currentTimeMillis();
 				final float time = (float)(endtime-starttime)/1000000000.f;
-				System.out.println(time);
+				//System.out.println(time);
 			}
 			//mechanism to update quantum sim and graphics only when needed
 			//the time checks don't add significant overhead, i checked
@@ -210,11 +214,12 @@ class UpdateTask implements Runnable
 }
 
 @SuppressWarnings("serial")
-public class GameWindow extends JApplet {
+public class GameWindow extends JPanel  {
 		GameManager gm;
 		public void init()
 		{
-			gm = new GameManager(this,getCodeBase().toString()+"/levels/");
+			gm = new GameManager(this,"http://www.tropic.org.uk/~crispin/quantum/levels/");
+			
 			//initialize javafx - just for mp3 playback
 			@SuppressWarnings("unused")
 			final JFXPanel fxPanel = new JFXPanel();
@@ -228,6 +233,25 @@ public class GameWindow extends JApplet {
 			});
 			t.start();
 		}
+		public Dimension getPreferredSize() {return new Dimension(700,525);}
 		public String getTextReport() { return gm.getTextReport();}
+		
+		public static void main(String[] args) {
+			  JFrame f = new JFrame();
+			  f.setTitle("Quantum Marble Maze");
+			  f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			  GameWindow g = new GameWindow();
+			  g.setBackground(Color.BLACK);
+//			  //uncomment to demonstrate padding problem
+//			  Border border = BorderFactory.createLineBorder(Color.BLACK);
+//	          g.setBorder(border);
+			  f.add(g);
+			  g.init();
+			  f.pack();
+			  Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+			  f.setLocation(dim.width/2-f.getSize().width/2, dim.height/2-f.getSize().height/2);
+			  f.setResizable(false);
+			  f.setVisible(true);
+		}
 }
 

@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
 <jardesc>
-    <jar path="D:/quantum/Apache24/htdocs/quantumunsigned.jar"/>
-    <options buildIfNeeded="true" compress="true" descriptionLocation="/quantum/src/quantum/build_jar_for_eclipse.jardesc" exportErrors="false" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <jar path="D:/quantum_open/docs/quantumunsigned.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/quantum_open/quantum/src/quantum/build_jar_for_eclipse.jardesc" exportErrors="false" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
     <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
     <selectedProjects/>
-    <manifest generateManifest="false" manifestLocation="/quantum/src/quantum/manifest" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+    <manifest generateManifest="false" mainClassHandleIdentifier="=quantum_open/quantum\/src&lt;quantum{GameWindow.java[GameWindow" manifestLocation="/quantum_open/quantum/src/quantum/manifest" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
         <sealing sealJar="false">
             <packagesToSeal/>
             <packagesToUnSeal/>
         </sealing>
     </manifest>
     <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
-        <javaElement handleIdentifier="=quantum/src"/>
+        <javaElement handleIdentifier="=quantum_open/quantum\/src"/>
+        <file path="/quantum_open/.gitignore"/>
+        <file path="/quantum_open/README.md"/>
+        <file path="/quantum_open/.classpath"/>
+        <file path="/quantum_open/.project"/>
+        <file path="/quantum_open/LICENSE.md"/>
     </selectedElements>
 </jardesc>

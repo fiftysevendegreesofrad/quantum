@@ -218,7 +218,7 @@ public class GameWindow extends JPanel  {
 		GameManager gm;
 		public void init()
 		{
-			gm = new GameManager(this,"http://www.tropic.org.uk/~crispin/quantum/levels/");
+			gm = new GameManager(this,"http://fiftysevendegreesofrad.github.io/quantum/levels/");
 			
 			//initialize javafx - just for mp3 playback
 			@SuppressWarnings("unused")

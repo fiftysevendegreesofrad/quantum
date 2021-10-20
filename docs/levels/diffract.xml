@@ -1,0 +1,20 @@
+<!--
+double slit will give more bands (no envelope) though less gets through overall
+i wonder if double slit is physically accurate?
+alas it doesn't immediately appear so
+-->
+
+<level dt="0.1" scale="3" maxtilt="2.5" colourmap="amp"  qft="2.4">
+<synth pitchdown="7"/>
+<mask>diffract.png</mask>
+<background>diffractbg.jpg</background>
+<gaussian x="250" y="241" sigma="10" px="0" py="0" a="1"/>
+<goal mask="#ff0000" target="2"/>
+<goal mask="#ff00ff" target="2"/>
+<trap mask="#0000ff" target="20"/>
+<trap mask="#00ff00" target="2"/>
+<trap mask="#ffff00" target="2"/>
+<trap mask="#00ffff" target="15"/>
+<trap mask="#888888" target="15"/>
+<walls mask="#ffffff"/>
+</level>

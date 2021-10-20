@@ -1,0 +1,15 @@
+<level dt="0.1" scale="3" colourmap="amp" maxtilt="2.5" qft="5">
+<text><![CDATA[
+Always try to complete levels<br/>before the wavefunction spreads out...
+<br/><br/>
+...you can thank the <i>uncertainty principle</i> for that.
+<br/>If the particle starts in one place
+<br/>then its direction of movement is undefined
+<br/>so the possibilities spread.
+]]>
+</text>
+<background>lichen.jpg</background>
+<mask>lichenmask.png</mask>
+<walls mask="#000000"/>
+<gaussian x="600" y="300" sigma="1" px="0" py="0" a="1"/>
+</level>

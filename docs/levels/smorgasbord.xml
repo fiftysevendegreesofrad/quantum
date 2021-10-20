@@ -1,0 +1,14 @@
+<level dt="0.1" scale="3" colourmap="amp" maxtilt="2.5" qft="2.8">
+<synth  pitchdown="8"/>
+<mask>smorgasbord.png</mask>
+<background>smorgasbordbg.jpg</background>
+<gaussian x="85" y="431" sigma="10" px="0" py="0" a="1"/>
+<walls mask="#ffffff"/>
+<goal mask="#00ff00" target="50"/>
+<collapse mask="#00ffff" target="20" sigma="10"/>
+<collapse mask="#ffff00" target="10" sigma="10"/>
+<collapse mask="#0000ff" target="6" sigma="10"/>
+<collapse mask="#ff00ff" target="20" sigma="10"/>
+<collapse mask="#ff0000" target="5" sigma="10"/>
+<potentialplane mask="#888888" tl="2.5" tr="2.5" bl="2.5" br="2.5"/>
+</level>

@@ -1,0 +1,8 @@
+<level dt="0.1" scale="3" maxtilt="2.5" colourmap="rainbow"  qft="1">
+<synth pitchdown="8"/>
+<mask>hardshell.png</mask>
+<background>shell-bg.jpg</background>
+<gaussian x="85" y="51" sigma="5" px="0" py="0" a="1"/>
+<walls mask="#000000"/>
+<goal mask="#ff0000" target="30"/>
+</level>

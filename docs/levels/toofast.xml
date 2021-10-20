@@ -1,0 +1,8 @@
+<level dt="0.1" scale="2.5" colourmap="amp" maxtilt="10"  qft="5">
+<synth pitchdown="8"/>
+<mask>toofastmask.png</mask>
+<background>toofast.jpg</background>
+<gaussian x="153" y="263" sigma="10" px="0" py="0" a="1"/>
+<walls mask="#00ffff"/>
+<goal mask="#00ff00" target="50"/>
+</level>

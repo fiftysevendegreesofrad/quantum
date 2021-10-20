@@ -1,0 +1,12 @@
+<level dt="0.225" scale="2" colourmap="amp" maxtilt="2.5"  qft="8.8">
+<synth pitchdown="8"/>
+<mask>well-mask.png</mask>
+<background>annularmake-bg.jpg</background>
+<gaussian x="335" y="261" sigma="10" px="0" py="0" a="1"/>
+<goal mask="#ff0000" target="5"/>
+<goal mask="#ffff00" target="5"/>
+<goal mask="#00ff00" target="5"/>
+<goal mask="#0000ff" target="5"/>
+<goal mask="#000000" target="-10"/>
+<potentialwell x="335" y="261" surfacer="200" depth="-3"/>
+</level>

@@ -1,0 +1,13 @@
+<level dt="0.1" scale="3" colourmap="amp" maxtilt="2.5" qft="5">
+<text><![CDATA[
+Wavefunctions don't just tell you where the object is
+<br/>likely to be.  Like any wave, they also have a <i>phase</i> 
+<br/>which affects how they move.
+<br/><br/>I'm going to use colour to show you the phase.
+]]>
+</text>
+<background>lichen.jpg</background>
+<mask>lichenmask.png</mask>
+<walls mask="#000000"/>
+<gaussian x="600" y="300" sigma="1" px="0" py="0" a="1"/>
+</level>

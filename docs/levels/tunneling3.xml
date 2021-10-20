@@ -1,0 +1,11 @@
+<level dt="0.1" scale="3" colourmap="rainbow" maxtilt="2.5" qft="2.5">
+<synth pitchdown="8"/>
+<mask>tunnelingmask3.png</mask>
+<background>tunnelingbg3.jpg</background>
+<potentialplane mask="#ff0000" tl="2.5" tr="2.5" bl="2.5" br="2.5"/>
+<goal mask="#00ff00" target="20"/>
+<gaussian x="270" y="262" sigma="5" a="1" px="0" py="0"/>
+<walls mask="#ffffff"/>
+<trap mask="#ffff00" target="20"/>
+<sink mask="#00ffff"/>
+</level>

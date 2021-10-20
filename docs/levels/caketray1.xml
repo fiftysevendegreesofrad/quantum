@@ -1,0 +1,27 @@
+<level dt="0.1" scale="3" maxtilt="10" colourmap="amp" qft="6.7">
+<audioloop>trippy_gamecut.mp3</audioloop>
+<mask>caketray1mask.png</mask>
+<background>caketray1bg.jpg</background>
+<gaussian x="105" y="429" sigma="3" px="0" py="0" a="1"/>
+<goal mask="#00ff00" target="30"/>
+<walls mask="#000000"/>
+<sink mask="#ffffff"/>
+<collapse mask="#000069" target="25" sigma="4"/>
+<collapse mask="#00006A" target="25" sigma="4"/>
+<collapse mask="#00006B" target="25" sigma="4"/>
+<!--<collapse mask="#00006C" target="25" sigma="4"/>-->
+<collapse mask="#00006D" target="25" sigma="4"/>
+<!--<collapse mask="#00006E" target="25" sigma="4"/>-->
+<collapse mask="#00006F" target="25" sigma="4"/>
+<trap mask="#ff0000" target="4"/>
+<potentialcone x="108" y="431" r="73" depth="-1"/>
+<potentialcone x="108" y="268" r="73" depth="-1"/>
+<potentialcone x="264" y="268" r="73" depth="-1"/>
+<potentialcone x="264" y="99" r="73" depth="-1"/>
+<potentialcone x="429" y="99" r="73" depth="-1"/>
+<potentialcone x="592" y="99" r="73" depth="-1"/>
+<potentialcone x="592" y="268" r="73" depth="-1"/>
+<potentialcone x="592" y="431" r="73" depth="-1"/>
+<potentialcone x="429" y="431" r="73" depth="-1"/>
+<potentialcone x="429" y="268" r="73" depth="-1"/>
+</level>

@@ -1,0 +1,18 @@
+<level dt="0.03" scale="3" maxtilt="2.5" colourmap="rainbow"  qft="1">
+<audioloop>chimes_gamecut.mp3</audioloop>
+<background>welldone.png</background>
+<text><![CDATA[
+<font size=5
+><i>Well done!</i><br/>
+<i>You have completed</i> Quantum Marble Maze
+<br/><i>game/soundtrack by</i> 
+<br/>Crispin Cooper / Oscillicraft
+<br/><br/><br/>
+<i>&quot;...the paradox is only a conflict between reality
+<br/>and your feeling of what reality ought to be.&quot;</i>
+<br/>Richard Feynman</font>
+]]>
+</text>
+<gaussian x="350" y="265" sigma="1" px="0" py="0" a="1"/>
+<reward/>
+</level>

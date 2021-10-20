@@ -1,6 +1,6 @@
 # Quantum Marble Maze
 
-This is the source of Quantum Marble Maze. The game is available to play [here](http://tropic.org.uk/~crispin/quantum/) and the best written introduction is in [this blog post](https://omnisplore.wordpress.com/2016/04/25/learning-quantum-mechanics-the-easy-way/).
+This is the source of Quantum Marble Maze. The game is available to play [here](http://fiftysevendegreesofrad.github.io/quantum/) and the best written introduction is in [this blog post](https://omnisplore.wordpress.com/2016/04/25/learning-quantum-mechanics-the-easy-way/).
 
 <img src="https://raw.githubusercontent.com/fiftysevendegreesofrad/quantum/master/screengrabs/Capture.PNG" width="400"/> <img src="https://raw.githubusercontent.com/fiftysevendegreesofrad/quantum/master/screengrabs/Capture2.PNG" width="400"/>
 
@@ -37,7 +37,7 @@ The HN thread has some good points from some users https://news.ycombinator.com/
 ### Multiple particles
 
 If you haven’t already, it’s worth reading my comments on this blog first
-https://linkingideasblog.wordpress.com/2016/04/25/learning-quantum-mechanics-the-easy-way/
+https://omnisplore.wordpress.com/2016/04/25/learning-quantum-mechanics-the-easy-way/
 
 For gameplay purposes it would be possible to simulate multiple particles with O(n) complexity by making the particles non-interacting, *except* at a specific point in time or space.  This needs creation of some new gameplay device.  For example:
 
